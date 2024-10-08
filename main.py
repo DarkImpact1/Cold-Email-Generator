@@ -9,6 +9,13 @@ load_dotenv()
 api_key = os.getenv("GROQ_API_KEY")
 
 st.title("Generate Email for Your Job")
+st.write("""
+Welcome! In this project, you will be asked to provide your full name, along with your skills and experience (optional).
+Based on this information, a personalized cold email will be generated, which you can copy and send to hiring managers for job opportunities.
+Simply paste the job posting URL, and let the tool handle the rest. Sit back and relax!
+         
+""")
+
 
 # Input for the user's name
 employer_name = st.text_input("Enter your name").strip().title()
