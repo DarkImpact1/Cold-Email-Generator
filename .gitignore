@@ -1,3 +1,3 @@
 llmenv
-.gitignore
 .env
+.ipynb_checkpoints
