@@ -1,2 +1,4 @@
-llmenv
-.gitignore
+langchain_community
+langchain-groq
+python-dotenv
+beautifulsoup4
