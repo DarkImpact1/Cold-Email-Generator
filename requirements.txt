@@ -3,4 +3,3 @@ langchain-groq
 python-dotenv
 beautifulsoup4
 streamlit
-pyperclip
