@@ -53,7 +53,7 @@ class ColdEmailGenerator:
     def writeEmail(self,employer_name,employer_skills,employer_experience,url):
         json_response = self.scrapeWebpage(url)
         if json_response['job role'] == None:
-            return f"Sorry could find job on that link"
+            return f"Sorry could find job at the provided link"
         job_role = json_response['job role']
         experience_required = json_response['experience']
         required_skills = json_response['skills']
@@ -74,7 +74,8 @@ class ColdEmailGenerator:
                 
                 Remember If My experience is not aligned with experience required then don't add experience
 
-                Conclude with a call to action for scheduling an interview or further discussion. The email should be succinct (around 200-250 words), polished, and ready to be copied and pasted.
+                Conclude with a call to action for scheduling an interview or further discussion. The email should be succinct (around 50-100 words), polished, and ready to be copied and pasted.
+                Take care of word limit
 
                 ### NO PREAMBLE, JUST EMAIL CONTENT
             '''
